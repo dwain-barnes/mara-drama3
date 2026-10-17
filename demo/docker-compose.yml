@@ -7,7 +7,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ${MODELS:-D:/models}:/models:ro
+      - ${MODELS:-./models}:/models:ro
     environment:
       - N_CPU_MOE=${N_CPU_MOE:-12}
     deploy:

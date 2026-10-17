@@ -7,7 +7,7 @@ if (-not $Models -and (Test-Path "$PSScriptRoot\.env")) {
     $m = Select-String -Path "$PSScriptRoot\.env" -Pattern '^MODELS=(.+)$'
     if ($m) { $Models = $m.Matches[0].Groups[1].Value.Trim() }
 }
-if (-not $Models) { $Models = "D:/models" }
+if (-not $Models) { $Models = "./models" }
 
 $hf = "https://huggingface.co"
 $sherpa = "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models"

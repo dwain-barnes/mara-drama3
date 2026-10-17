@@ -10,9 +10,9 @@ takes 20 to 40 minutes on top of the download. After that it starts in about
 a minute. When the log says ready, open http://localhost:8000. Use
 localhost, the microphone does not work on other addresses without https.
 
-The models are not in the image. They go in `D:/models` on Windows and
-`./models` on Linux; set `MODELS` (in `.env` or the environment) to use
-another folder. `get-models.ps1` / `get-models.sh` fills it, and `start`
+The models are not in the image. They go in a `models` folder next to this
+file; set `MODELS` (in `.env` or the environment) to keep them elsewhere.
+`get-models.ps1` / `get-models.sh` fills it, and `start`
 runs it every time, so it only downloads what is missing and picks up a
 half-finished file where it stopped. The layout is the one in `Dockerfile`.
 The files come from:
