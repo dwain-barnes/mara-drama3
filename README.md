@@ -1,9 +1,13 @@
+
+
+
+
 # mara-drama3
 
 Fish Audio's Drama 3, a 35B text-to-speech model that whispers, laughs and shouts
 on cue, running in llama.cpp on one 24 GB card next to a small chat LLM, with a
 web page you talk to.
-
+https://github.com/user-attachments/assets/a0680201-af68-4810-a25f-22b9b00e9855
 [demo/demo.mp4](demo/demo.mp4) is a short clip of it in use.
 
 ## Run it
