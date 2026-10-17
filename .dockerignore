@@ -1,0 +1,16 @@
+*
+!third_party/llama.cpp
+third_party/llama.cpp/build
+third_party/llama.cpp/.git
+third_party/llama.cpp/models
+third_party/llama.cpp/docs
+third_party/llama.cpp/media
+!demo
+demo/.venv
+demo/build
+demo/out
+demo/bank/*.wav
+!verify/refs
+verify/refs/*
+!verify/refs/p283.codes
+!verify/refs/p283.txt

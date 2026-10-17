@@ -1,0 +1,27 @@
+# reference checkouts, not ours (see README)
+third_party/fish-speech/
+third_party/audio.cpp/
+
+# builds, venvs, scratch
+**/build/
+**/.venv/
+**/__pycache__/
+**/out/
+gen.json
+patches/
+
+# large verification data (ref_*.py regenerate them)
+verify/*.npy
+verify/*.bin
+verify/*.log
+verify/*.txt
+verify/*.json
+verify/refs/*.wav
+
+# rendered clips (the .codes next to them are what the demo reads)
+demo/bank/*.wav
+
+# build logs and helpers for the reference ports
+third_party/logs/
+third_party/scripts/
+bench/**/*.wav

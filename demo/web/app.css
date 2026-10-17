@@ -1,0 +1,147 @@
+:root {
+  --bg: #111317;
+  --fg: #ebe7e0;
+  --dim: #8b8f98;
+  --accent: #f0a86b;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 20px/1.5 system-ui, sans-serif;
+}
+
+main {
+  max-width: 640px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.4rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+#talk {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: transparent;
+  color: var(--fg);
+  font: inherit;
+  font-size: 1.15rem;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+#talk:hover:not(:disabled) {
+  box-shadow: 0 0 2.5rem -0.5rem var(--accent);
+}
+
+#talk.on {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+#talk:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+#talk:focus-visible {
+  outline: 2px solid var(--fg);
+  outline-offset: 4px;
+}
+
+#scope {
+  width: 100%;
+  height: 120px;
+}
+
+#state {
+  margin: -0.75rem 0 0;
+  color: var(--dim);
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+}
+
+#log {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#log p {
+  margin: 0;
+}
+
+#log .you {
+  color: var(--dim);
+  text-align: right;
+}
+
+#log .mara {
+  font-size: 1.2rem;
+}
+
+.tag {
+  font-size: 0.7rem;
+  color: var(--dim);
+  border: 1px solid #2b2f37;
+  border-radius: 0.6rem;
+  padding: 0.05rem 0.45rem;
+  margin-right: 0.35rem;
+  vertical-align: 0.15rem;
+}
+
+.aside {
+  color: var(--dim);
+  font-style: italic;
+}
+
+#type {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#line {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #2b2f37;
+  color: var(--fg);
+  font: inherit;
+  padding: 0.5rem 0;
+}
+
+#line:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+#reset {
+  color: var(--dim);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}

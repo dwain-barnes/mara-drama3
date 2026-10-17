@@ -1,0 +1,10 @@
+ggml_cuda_init: found 1 CUDA devices (Total VRAM: 24563 MiB):
+  Device 0: NVIDIA GeForce RTX 3090 Ti, compute capability 8.6, VMM: yes, VRAM: 24563 MiB
+| model                          |       size |     params | backend    | ngl |  n_cpu_moe |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ---------: | --------------: | -------------------: |
+| qwen35moe 35B.A3B Q8_0         |  19.37 GiB |    34.68 B | CUDA       |  99 |          0 |           pp512 |     4703.11 ± 366.86 |
+| qwen35moe 35B.A3B Q8_0         |  19.37 GiB |    34.68 B | CUDA       |  99 |          0 |           tg128 |        160.80 ± 0.43 |
+| qwen35moe 35B.A3B Q8_0         |  19.37 GiB |    34.68 B | CUDA       |  99 |          4 |           pp512 |     2014.00 ± 142.82 |
+| qwen35moe 35B.A3B Q8_0         |  19.37 GiB |    34.68 B | CUDA       |  99 |          4 |           tg128 |        133.31 ± 1.46 |
+
+build: f336359 (1)

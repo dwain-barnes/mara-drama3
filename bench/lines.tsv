@@ -1,0 +1,17 @@
+id	text
+neutral_long	I had a look at the logs this morning and the server has been fine since the restart, so I think we can leave it for now.
+neutral_short	Yeah, that works.
+warm	[warm] Oh that's lovely, I'm really glad it went well for you.
+amused_laugh	Honestly [laughs] I did not see that coming at all.
+excited	[excited] Wait, it actually compiled first time? That never happens.
+sympathetic	[sympathetic, gentle] I'm sorry, that sounds like a rough week.
+hesitant	[unsure, slowing down] Um, I think it was Tuesday? Maybe Wednesday, I'd have to check.
+whisper	<whisper>Don't tell anyone, but I've already finished the report.</whisper>
+emphasis	I said the <emphasis>second</emphasis> file, not the first one.
+apologetic	[apologetic] Sorry, I got that wrong, let me try again.
+serious	[serious, measured] Before you run that, make a backup. It drops the table.
+sigh	Right. [sighs] Let's go through it one more time from the top.
+start_tag_short	[amused] Oh no.
+clause_1	So the thing is,
+clause_2	I checked the config twice,
+clause_3	and the port was wrong the whole time.

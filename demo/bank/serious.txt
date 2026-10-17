@@ -1,0 +1,1 @@
+Before you run that, please make a backup first. It drops the whole table, and the data cannot be recovered afterwards.

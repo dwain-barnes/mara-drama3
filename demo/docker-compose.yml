@@ -1,0 +1,21 @@
+services:
+  mara:
+    build:
+      context: ..
+      dockerfile: demo/Dockerfile
+    image: drama3-mara
+    ports:
+      - "8000:8000"
+    volumes:
+      - ${MODELS:-D:/models}:/models:ro
+    environment:
+      - N_CPU_MOE=${N_CPU_MOE:-12}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              # an index or a UUID from nvidia-smi -L
+              device_ids: ['${GPU_ID:-0}']
+              capabilities: [gpu]
+    restart: "no"

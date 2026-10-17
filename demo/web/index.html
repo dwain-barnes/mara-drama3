@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Talk to Mara</title>
+  <link rel="stylesheet" href="app.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Mara</h1>
+    <button id="talk" disabled>Talk to Mara</button>
+    <canvas id="scope" width="640" height="120"></canvas>
+    <p id="state">waking up</p>
+    <div id="log" aria-live="polite"></div>
+    <form id="type">
+      <input id="line" autocomplete="off" placeholder="or type to her">
+      <a href="#" id="reset">start over</a>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,7 @@
+id	text
+neutral_long	I had a look at the logs this morning and the server has been fine since the restart, so I think we can leave it for now.
+neutral_short	Yeah, that works.
+warm	[warm] Oh that's lovely, I'm really glad it went well for you.
+hesitant	[unsure, slowing down] Um, I think it was Tuesday? Maybe Wednesday, I'd have to check.
+whisper	<whisper>Don't tell anyone, but I've already finished the report.</whisper>
+clause_2	I checked the config twice,
