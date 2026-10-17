@@ -45,11 +45,22 @@ The models themselves are not in the repo. The Drama 3 GGUFs are at
 [EryriLabs/drama-3-llamacpp-GGUF](https://huggingface.co/EryriLabs/drama-3-llamacpp-GGUF);
 the download script fetches those, Gemma 4, Parakeet and Silero.
 
+## Mara's voice
+
+Mara speaks with the voice of speaker p283 from the CSTR VCTK Corpus
+(University of Edinburgh), one sentence of which is the reference clip in
+`verify/refs/p283.codes`; the mood clips in `demo/bank` were rendered from it.
+VCTK is released under the Creative Commons Attribution 4.0 licence:
+Yamagishi, Veaux and MacDonald, "CSTR VCTK Corpus: English Multi-speaker
+Corpus for CSTR Voice Cloning Toolkit (version 0.92)", 2019,
+https://doi.org/10.7488/ds/2645. If you ship the voice, keep the credit.
+
 ## Thanks
 
 Fish Audio for Drama 3 and fish-speech, which was the ground truth for every
 check here; the llama.cpp project; NVIDIA for Parakeet and the sherpa-onnx
-team for its ONNX export; Unsloth for the Gemma 4 quants.
+team for its ONNX export; Unsloth for the Gemma 4 quants; the CSTR at
+Edinburgh for VCTK.
 
 ## Licence
 
